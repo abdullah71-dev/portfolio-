@@ -1,0 +1,370 @@
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: aliceblue;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-left: 40px;
+    background-color: rgb(193, 214, 233);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    padding-left: 5px;
+    margin: 5px;
+}
+
+.navigation a:hover {
+background-color: rgb(109, 154, 226);
+}
+
+section {
+padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/photo_2024-08-16_22-39-42.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.main h1 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.main h1 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.main h2 {
+    color: white;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.main-bottom {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+.main-bottom:hover {
+background-color: rgb(40, 9, 193);
+transform: scale(1.1);
+transition-duration: 1s ease;
+}
+
+.social-icons a {
+color: white;
+font-size: 1.8em;
+padding-right: 30px; 
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 2.3em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white;
+    width: 250px;
+    box-shadow: 0 5px 30px rgba(1, 1, 1, 20%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    transition-duration: 1s ease;
+
+}
+.card:hover{
+    transform: scale(1.1);
+    background-color: rgb(130, 176, 222);
+ }
+
+ .icon img{
+    color: blue;
+    font-size:8em;
+    position: relative;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+ }
+ .info {
+    text-align: center;
+
+ }
+
+ .info h3{
+    color: blue;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+ }
+
+ .projects{
+    background-color: black;
+ }
+ .projects.content {
+    margin-top: 30px;
+ }
+
+  .project-card {
+    background-color: aliceblue;
+    border: 1px solid rgb(47, 116, 176);
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.8s ease;
+  }
+
+  .project-card:hover.project-img{
+    opacity: 0.9;
+  }
+  .project-card:hover{
+    transform: scale(1.1);
+  }
+  .project-img img{
+    width: 100%;
+  }
+  .project-info{
+    padding: 1em;
+  }
+   .category{
+    font-size: 1em;
+    color: black;
+   }
+   .project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+   }
+   .more-details{
+    text-decoration: none;
+    color: blue;
+   }
+   .more-details:hover{
+    color: rgb(129, 10, 180);
+   }
+   
+   .contact .info p{
+    font-size: 1.2em;
+   }
+    .footer{
+        background-color: black;
+        color: aliceblue;
+        padding: 2em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-title{
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+    .footer-title span {
+       color: blue; 
+    }
+
+    @media (max-width: 1024px) {
+    header {
+        padding: 12px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .navigation a {
+        padding: 10px;
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main h1 {
+        font-size: 1em;
+    }
+
+    .main h2 {
+        font-size: 1.3em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .main h1 {
+        font-size: 0.9em;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .main h1 {
+        font-size: 0.8em;
+    }
+
+    .main h2 {
+        font-size: 1em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 11px;
+    }
+
+    .main h1,
+    .main h2 {
+        font-size: 0.7em;
+    }
+
+    .logo {
+        font-size: 1em;
+    }
+}
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: blue;
+}
+
+/* إظهار زر القائمة عند صغر الشاشة */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: aliceblue;
+        margin-top: 10px;
+    }
+
+    .navigation a {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .navigation.show {
+        display: flex;
+    }
+}

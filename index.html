@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdullah Mohamed | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  
+
+  <header>
+    <a href="#" class="logo">Abdullah</a>
+    
+    <i class="menu-toggle" onclick="toggleMenu()">☰</i> 
+
+    <nav class="navigation" id="navMenu">
+        <a href="#Home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="main" id="Home">
+    <div>
+      <h1>Hello, I'm Abdullah<br><span>Software Engineer<br>Full Stack Developer</span></h1>
+      <h2>Be strong, things will get better.</h2>
+      <a href="#projects" class="main-bottom">View My Work</a>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/abdullah-mohamed-4267ba2b3" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/abdullah.mohamed71" target="_blank"  title="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100017954987788" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/abdullah71-dev" target="_blank" title="github"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/qr/ALEKZOOPV536M1" target="_blank" title="whatsapp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards" id="services">
+    <h2 class="title">Services</h2>
+    <div class="content">
+      <div class="card">
+        <div class="icon"><img src="images/html.png" alt="Web development icon" /></div>
+        <div class="info">
+          <h3>Web Development</h3>
+          <p>I specialize in creating high-quality websites for your business or product using modern technologies.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="images/branding.png" alt="Frontend development icon" /></div>
+        <div class="info">
+          <h3>Frontend Development</h3>
+          <p>I build responsive and user-friendly interfaces including layouts, buttons, forms, and interactive components.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="images/software.png" alt="Backend development icon" /></div>
+        <div class="info">
+          <h3>Backend Development</h3>
+          <p>I implement server-side logic and connect to databases to ensure the core functionality of your applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="content">
+      <div class="project-card">
+        <div class="project-img"><img src="images/photo_2024-08-16_22-16-24.jpg" alt="Screenshot of DevBooks project" /></div>
+        <div class="project-info">
+          <p class="category">A modern frontend project showcasing layout and interaction techniques.</p>
+          <b class="project-title">
+            <span>DevBooks</span>
+            <a href="#" class="more-details">View</a>
+          </b>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img"><img src="images/OIP2.jpeg" alt="Screenshot of Portfolio project" /></div>
+        <div class="project-info">
+          <p class="category">A personal portfolio website highlighting frontend skills and design elements.</p>
+          <b class="project-title">
+            <span>Portfolio Website</span>
+            <a href="#" class="more-details">View</a>
+          </b>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img"><img src="images/photo_2024-08-16_22-16-45.jpg" alt="Screenshot of another project" /></div>
+        <div class="project-info">
+          <p class="category">An example project showing responsive design and structured content.</p>
+          <b class="project-title">
+            <a href="#" class="more-details">View</a>
+          </b>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="cards contact" id="contact">
+    <h2 class="title">Let's Work Together</h2>
+    <div class="content">
+      <div class="card">
+        <div class="icon"><img src="images/download.jpeg" alt="Phone icon" /></div>
+        <div class="info">
+          <h3>Phone</h3>
+          <p>01118804964</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="images/OIP.jpeg" alt="Email icon" /></div>
+        <div class="info">
+          <h3>Email</h3>
+          <p>af555543@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-title">Copyright &copy; <span>Abdullah Mohamed</span></p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/abdullah-mohamed-4267ba2b3" target="_blank" title="linkedin"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/abdullah.mohamed71" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100017954987788" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://github.com/abdullah71-dev" target="_blank" title="github"><i class="fab fa-github"></i></a>
+      <a href="https://wa.me/qr/ALEKZOOPV536M1" target="_blank"title="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+  
+  <script>
+    function toggleMenu() {
+        var nav = document.getElementById("navMenu");
+        nav.classList.toggle("show");
+    }
+
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
